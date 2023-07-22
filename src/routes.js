@@ -6,10 +6,12 @@ import Rodape from "components/Rodape";
 import PaginaPadrao from "components/PaginaPadrao";
 import Post from "pages/Post";
 import NotFound from "pages/NotFound";
+import ScrollToTop from "components/ScrollToTop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Menu />
         <Routes>
           <Route path="/" element={<PaginaPadrao/>}>
